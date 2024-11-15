@@ -1,0 +1,88 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Generelle CV-Stile */
+.cv-container {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header-Bereich */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+  color: #1a73e8;
+}
+
+.header .title {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.header .contact {
+  font-size: 0.9em;
+  color: #888;
+}
+
+/* Abschnittsüberschriften */
+h2 {
+  font-size: 1.8em;
+  color: #333;
+  border-bottom: 2px solid #1a73e8;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.3em;
+  color: #1a73e8;
+  margin-bottom: 5px;
+}
+
+/* Job- und Ausbildungseinträge */
+.job, .education-entry {
+  margin-bottom: 20px;
+}
+
+.job .company, .education-entry .school {
+  font-size: 1em;
+  color: #777;
+}
+
+.description {
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* Skills */
+.skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills ul li {
+  background-color: #e3f2fd;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.95em;
+  color: #1a73e8;
+}
+
+/* Icons für die Abschnitte */
+h2 i {
+  margin-right: 10px;
+  color: #1a73e8;
+}
