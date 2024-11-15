@@ -7,12 +7,14 @@ import { CvComponent } from './cv/cv.component';
 import {NgOptimizedImage} from "@angular/common";
 import { FooterComponent } from './footer/footer.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { HobbiesComponent } from './hobbies/hobbies.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CvComponent,
-    FooterComponent
+    FooterComponent,
+    HobbiesComponent
   ],
   imports: [
     BrowserModule,
