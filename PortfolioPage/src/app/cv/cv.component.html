@@ -9,26 +9,38 @@
   </section>
 
   <section class="experience">
-    <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
-    <div *ngFor="let job of jobs" class="job">
-      <h3>{{ job.function }} - {{ job.role }}</h3>
-      <p class="company">{{ job.company }} | {{ job.startDate }} - {{ job.endDate }}</p>
-      <p class="description">{{ job.description }}</p>
+    <h2 (click)="toggleSection('experienceOpen')">
+      <i class="fas fa-briefcase"></i> Professional Experience
+    </h2>
+    <div *ngIf="experienceOpen">
+      <div *ngFor="let job of jobs" class="job">
+        <h3>{{ job.function }} - {{ job.role }}</h3>
+        <p class="company">{{ job.company }} | {{ job.startDate }} - {{ job.endDate }}</p>
+        <p class="description">{{ job.description }}</p>
+      </div>
     </div>
   </section>
 
   <section class="education">
-    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-    <div *ngFor="let education of educationList" class="education-entry">
+    <h2 (click)="toggleSection('educationOpen')">
+      <i class="fas fa-graduation-cap"></i> Education
+    </h2>
+    <div *ngIf="educationOpen">
+      <div *ngFor="let education of educationList" class="education-entry">
       <h3>{{ education.degree }}</h3>
       <p class="school">{{ education.school }} | {{ education.startDate }} - {{ education.endDate }}</p>
+      </div>
     </div>
   </section>
 
   <section class="skills">
-    <h2><i class="fas fa-tools"></i> Skills</h2>
-    <ul>
-      <li *ngFor="let skill of skills">{{ skill }}</li>
-    </ul>
+    <h2 (click)="toggleSection('skillsOpen')">
+      <i class="fas fa-tools"></i> Skills
+    </h2>
+    <div *ngIf="skillsOpen">
+      <ul>
+        <li *ngFor="let skill of skills">{{ skill }}</li>
+      </ul>
+    </div>
   </section>
 </div>

@@ -50,4 +50,12 @@ export class CvComponent {
   ];
 
   skills: string[] = ['Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS'];
+
+  experienceOpen = false;
+  educationOpen = false;
+  skillsOpen = false;
+
+  toggleSection(section: string) {
+    (this as any)[section] = !(this as any)[section];
+  }
 }
