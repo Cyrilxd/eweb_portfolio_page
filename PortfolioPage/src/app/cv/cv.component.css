@@ -6,10 +6,10 @@
   max-width: 900px;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
-  color: #333;
+  color: #e0e0e0;
   padding: 20px;
-  background-color: #f9f9f9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #121212; /* Dunklerer Hintergrund */
+  box-shadow: none; /* Box-Schatten entfernt */
   border-radius: 8px;
 }
 
@@ -22,31 +22,31 @@
 .header h1 {
   font-size: 2.5em;
   margin-bottom: 5px;
-  color: #1a73e8;
+  color: #bb86fc; /* Akzentfarbe für Überschriften */
 }
 
 .header .title {
   font-size: 1.2em;
-  color: #666;
+  color: #cccccc; /* Anpassung für Titel */
 }
 
 .header .contact {
   font-size: 0.9em;
-  color: #888;
+  color: #aaaaaa; /* Anpassung für Kontaktinformationen */
 }
 
 /* Abschnittsüberschriften */
 h2 {
   font-size: 1.8em;
-  color: #333;
-  border-bottom: 2px solid #1a73e8;
+  color: #e0e0e0; /* Anpassung für Überschrift */
+  border-bottom: 2px solid #bb86fc;
   padding-bottom: 5px;
   margin-bottom: 20px;
 }
 
 h3 {
   font-size: 1.3em;
-  color: #1a73e8;
+  color: #bb86fc;
   margin-bottom: 5px;
 }
 
@@ -57,12 +57,12 @@ h3 {
 
 .job .company, .education-entry .school {
   font-size: 1em;
-  color: #777;
+  color: #b0b0b0; /* Anpassung für Text */
 }
 
 .description {
   font-size: 0.95em;
-  color: #555;
+  color: #d0d0d0; /* Anpassung für Beschreibung */
 }
 
 /* Skills */
@@ -72,17 +72,17 @@ h3 {
 }
 
 .skills ul li {
-  background-color: #e3f2fd;
+  background-color: #2b2b2b; /* Dunklere Hintergründe */
   display: inline-block;
   margin-right: 10px;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 0.95em;
-  color: #1a73e8;
+  color: #bb86fc;
 }
 
 /* Icons für die Abschnitte */
 h2 i {
   margin-right: 10px;
-  color: #1a73e8;
+  color: #bb86fc;
 }

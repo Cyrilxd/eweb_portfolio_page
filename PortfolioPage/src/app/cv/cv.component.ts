@@ -51,9 +51,28 @@ export class CvComponent {
 
   skills: string[] = ['Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS'];
 
+  languages = [
+    {
+      language: 'German',
+      level: 'C2',
+    },
+    {
+      language: 'English',
+      level: 'C1',
+    },
+    {
+      language: 'French',
+      level: 'B2',
+    },
+    {
+      language: 'Latin',
+      level: 'A2',
+    }];
+
   experienceOpen = false;
   educationOpen = false;
   skillsOpen = false;
+  languagesOpen: boolean = false;
 
   toggleSection(section: string) {
     (this as any)[section] = !(this as any)[section];

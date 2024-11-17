@@ -1,6 +1,6 @@
 <div class="cv-container">
   <section class="header">
-    <h1>{{ name }}</h1>
+    <h2>Curriculum vitae</h2>
     <p class="title">Leader for Teams | Scrum Master</p>
     <p class="contact">
       <span>Email: {{ email }}</span> |
@@ -40,6 +40,17 @@
     <div *ngIf="skillsOpen">
       <ul>
         <li *ngFor="let skill of skills">{{ skill }}</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="skills">
+    <h2 (click)="toggleSection('languagesOpen')">
+      <i class="fas fa-tools"></i> Languages
+    </h2>
+    <div *ngIf="languagesOpen">
+      <ul>
+        <li *ngFor="let language of languages">{{ language.language }} - {{ language.level }}</li>
       </ul>
     </div>
   </section>
