@@ -1,4 +1,19 @@
-<h1>Cyril Heiniger</h1>
-<div class="cv-container">
-  <app-cv>></app-cv>
+<div class="content-container">
+  <h1>Cyril Heiniger</h1>
+  <div class="cv-container">
+    <app-cv></app-cv>
+  </div>
+  <div class="card-container">
+    <section id="http-codes">
+      <app-template-card [title]="'HTTP Status Codes'">
+        <div *ngIf="imageUrl; else loading">
+          <h2>Random HTTP Status Code Cat</h2>
+          <img [src]="imageUrl" alt="HTTP Cat" />
+        </div>
+        <ng-template #loading>
+          <p>Loading a random HTTP cat...</p>
+        </ng-template>
+      </app-template-card>
+    </section>
+  </div>
 </div>

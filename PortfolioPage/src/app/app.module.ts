@@ -4,11 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CvComponent } from './cv/cv.component';
-import {NgOptimizedImage} from "@angular/common";
+import {CommonModule, NgOptimizedImage} from "@angular/common";
 import { FooterComponent } from './footer/footer.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { HttpCodesComponent } from './http-codes/http-codes.component';
+import {TemplateCardComponent} from "./template-card/template-card.component";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -16,13 +19,17 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     CvComponent,
     FooterComponent,
     HobbiesComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    HttpCodesComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgOptimizedImage
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgOptimizedImage,
+        TemplateCardComponent,
+        HttpClientModule,
+        CommonModule,
+    ],
   providers: [
     provideAnimationsAsync()
   ],
