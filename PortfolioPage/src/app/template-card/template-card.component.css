@@ -1,15 +1,13 @@
 .template-container {
-  border: 1px solid #ccc;
+  border: 1px solid #bb86fc;
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
-  background-color: #f9f9f9;
 }
 
 .template-container h1 {
   font-size: 1.8rem;
   margin-bottom: 15px;
-  color: #333;
 }
 
 .content {
