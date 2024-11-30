@@ -26,6 +26,14 @@ export class CvComponent {
       startDate: 'Aug 2022',
       endDate: 'Sep 2023',
       description: 'Aufbau vom Jira Team von 3 auf 7 MAs. Fachliche & methodische Führung von diesem Team'
+    },
+    {
+      function: 'BizDevOps Engineer',
+      role: 'DevOps Engineer',
+      company: 'SBB AG',
+      startDate: 'Aug 2020',
+      endDate: 'Aug 2022',
+      description: 'Responsible for the whole DevOps LifeCycle in Digital Services for DevTools.'
     }
   ];
   educationList = [

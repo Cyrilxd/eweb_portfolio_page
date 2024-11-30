@@ -15,5 +15,19 @@
         </ng-template>
       </app-template-card>
     </section>
+
+    <section id="catfacts">
+      <app-template-card [title]="'Cat Fact'">
+        <div *ngIf="catFact; else loading">
+          <h2>Random Cat Fact</h2>
+          <p>{{ catFact.fact }}</p>
+        </div>
+        <ng-template #loading>
+          <p>Loading a random cat fact...</p>
+        </ng-template>
+      </app-template-card>
+    </section>
   </div>
+
+
 </div>

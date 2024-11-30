@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpcodeapiService} from "../services/httpcode/httpcodeapi.service";
+import {CatfactsService} from "../services/catfacts/catfacts.service";
+import { CatFact } from '../services/catfacts/catfact.model';
 
 @Component({
   selector: 'app-portfolio',
@@ -10,11 +12,14 @@ export class PortfolioComponent implements OnInit{
 
 
   imageUrl: string | null = null;
-
-  constructor(private httpCodeApiService: HttpcodeapiService) {}
+  catFact : CatFact | null = null;
+  constructor(private httpCodeApiService: HttpcodeapiService, private catFactService: CatfactsService) {}
 
   ngOnInit() {
     this.loadHttpCodeMeme();
+    this.catFactService.getFactFromApi().subscribe(( data: CatFact) => {
+      this.catFact = data;
+    })
   }
 
   loadHttpCodeMeme(): void {
