@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import {CommonModule} from "@angular/common";
 
 @Component({
   selector: 'app-cv',
   templateUrl: './cv.component.html',
-  styleUrl: './cv.component.css'
+  styleUrl: './cv.component.css',
+  standalone: true,
+  imports: [CommonModule]
 })
 export class CvComponent {
   name: string = "Cyril Heiniger";

@@ -9,27 +9,27 @@ import { FooterComponent } from './footer/footer.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { HttpCodesComponent } from './http-codes/http-codes.component';
-import {TemplateCardComponent} from "./template-card/template-card.component";
+import { TemplateCardComponent } from "./template-card/template-card.component";
 import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
     AppComponent,
-    CvComponent,
     FooterComponent,
     HobbiesComponent,
-    PortfolioComponent,
-    HttpCodesComponent,
+
+
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        NgOptimizedImage,
-        TemplateCardComponent,
-        HttpClientModule,
-        CommonModule,
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgOptimizedImage,
+    HttpClientModule,
+    CommonModule,
+    TemplateCardComponent,
+    PortfolioComponent,
+    CvComponent,
+  ],
   providers: [
     provideAnimationsAsync()
   ],
