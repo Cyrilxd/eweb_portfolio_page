@@ -18,7 +18,7 @@ export class PortfolioComponent implements OnInit{
 
 
   imageUrl: string | null = null;
-  imageUrlCatPic: 'https://cataas.com/cat' | undefined;
+  imageUrlCatPic: string = '';
 
   catFact : CatFact | null = null;
   constructor(private httpCodeApiService: HttpcodeapiService, private catFactService: CatfactsService, private catPicService: CatpicService) {}
@@ -26,7 +26,7 @@ export class PortfolioComponent implements OnInit{
   ngOnInit() {
     this.loadHttpCodeMeme();
     this.loadCatFAct();
-    //this.loadCatPicture();
+    this.loadCatPicture();
   }
 
   loadCatFAct(): void{
@@ -42,12 +42,9 @@ export class PortfolioComponent implements OnInit{
       });
     });
   }
-
- /* loadCatPicture(): void {
-    this.catPicService.getRandomCatImage().subscribe( (blob) => {
-      this.imageUrlCatPic = this.createBlobUrlCatPic(blob);
-    })
-  }*/
+  loadCatPicture(): void {
+    this.imageUrlCatPic = this.catPicService.getRandomCatImage()
+  }
 
   private createBlobUrl(blob: Blob): string {
     return URL.createObjectURL(blob);

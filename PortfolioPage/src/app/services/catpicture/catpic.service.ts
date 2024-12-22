@@ -8,21 +8,9 @@ import {catchError} from "rxjs/operators";
 })
 export class CatpicService {
 
+  private readonly apiUrl: string = 'https://cataas.com/cat'; // will be proxied to: 'https://http.cat' -> chatgpt is cooking lol
 
-
-  private readonly apiUrl = 'https://cataas.com/cat'; // will be proxied to: 'https://http.cat' -> chatgpt is cooking lol
-
-
-  constructor(private http: HttpClient) {}
-
-
-  getRandomCatImage(): Observable<Blob> {
-    const url = `${this.apiUrl}`;
-    return this.http.get(url, { responseType: 'blob' }).pipe(
-      catchError((error) => {
-        console.error(`Fehler beim Laden des Katzenbildes :( }:`, error);
-        throw error;
-      })
-    );
+  getRandomCatImage(): string{
+   return this.apiUrl
   }
 }
