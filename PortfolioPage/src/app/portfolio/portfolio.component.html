@@ -1,10 +1,10 @@
 <div class="content-container">
-  <h1>Cyril Heiniger</h1>
-  <div class="cv-container">
+  <h1 @fadeIn>EWEB Portfolio page - Cyril Heiniger</h1>
+  <div class="cv-container" @fadeIn>
     <app-cv></app-cv>
   </div>
   <div class="card-container">
-    <section id="http-codes">
+    <section id="http-codes" @fadeIn>
       <app-template-card [title]="'HTTP Status Codes'">
         <div *ngIf="imageUrl; else loading">
           <h2>Random HTTP Status Code Cat</h2>
@@ -16,7 +16,7 @@
       </app-template-card>
     </section>
 
-    <section id="catfacts">
+    <section id="catfacts" @fadeIn>
       <app-template-card [title]="'Cat Fact'">
           <div *ngIf="catFact; else loading">
             <h2>Random Cat Fact</h2>
@@ -28,14 +28,14 @@
       </app-template-card>
     </section>
 
-    <section id="dogPicture">
-      <app-template-card [title]="'dog Pictures'">
+    <section id="dogPicture" @fadeIn>
+      <app-template-card [title]="'Dog Pictures'">
         <div *ngIf="imageUrlDog; else loading">
             <h2>Random Dog Picture</h2>
             <img [src]="imageUrlDog" alt="Dog Picture" />
           </div>
         <ng-template #loading>
-          <p>Loading a random cat picture...</p>
+          <p>Loading a random Dog picture...</p>
         </ng-template>
       </app-template-card>
     </section>

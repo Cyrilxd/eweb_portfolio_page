@@ -8,13 +8,20 @@ import {CvComponent} from "../cv/cv.component";
 import { catchError } from 'rxjs/operators';
 import { of } from 'rxjs';
 import {DogpicService} from "../services/dogpicture/dogpic.service";
+import {animate, state, style, transition, trigger} from "@angular/animations";
 
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css',
   standalone: true,
-  imports: [TemplateCardComponent, CommonModule, CvComponent]
+  imports: [TemplateCardComponent, CommonModule, CvComponent],
+  animations: [
+    trigger('fadeIn', [
+      state('void', style({ opacity: 0 })), // Initial state
+      transition(':enter', [animate('1s ease-in')]) // Animation for entering
+    ])
+  ]
 })
 export class PortfolioComponent implements OnInit {
 

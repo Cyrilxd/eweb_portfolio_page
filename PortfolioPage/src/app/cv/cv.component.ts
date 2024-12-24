@@ -60,7 +60,7 @@ export class CvComponent {
     }
   ];
 
-  skills: string[] = ['Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS'];
+  skills: string[] = ['Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Golang', 'Leadership', 'Communication', 'IaaS'];
 
   languages = [
     {
