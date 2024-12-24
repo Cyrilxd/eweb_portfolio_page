@@ -7,7 +7,6 @@ import { CvComponent } from './cv/cv.component';
 import {CommonModule, NgOptimizedImage} from "@angular/common";
 import { FooterComponent } from './footer/footer.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { HobbiesComponent } from './hobbies/hobbies.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TemplateCardComponent } from "./template-card/template-card.component";
 import {HttpClientModule} from "@angular/common/http";
@@ -16,9 +15,6 @@ import {HttpClientModule} from "@angular/common/http";
   declarations: [
     AppComponent,
     FooterComponent,
-    HobbiesComponent,
-
-
   ],
   imports: [
     BrowserModule,

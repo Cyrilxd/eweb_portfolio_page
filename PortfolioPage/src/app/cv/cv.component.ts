@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {CommonModule} from "@angular/common";
+import { CommonModule } from "@angular/common";
 
 @Component({
   selector: 'app-cv',
@@ -16,10 +16,10 @@ export class CvComponent {
     {
       function: 'Leader for Teams',
       role: 'Scrum Master / Team Coach',
-      company: 'Swisscom AG AG',
-      startDate: 'Okt 2023',
+      company: 'Swisscom AG',
+      startDate: 'Oct 2023',
       endDate: 'Present',
-      description: 'Fachliche & methodische Führung von einem 22 köpfigen Team in Network Infrastructure'
+      description: 'Technical and methodological leadership of a 22-member team in Network Infrastructure.'
     },
     {
       function: 'Servant Leader',
@@ -27,7 +27,7 @@ export class CvComponent {
       company: 'SBB AG',
       startDate: 'Aug 2022',
       endDate: 'Sep 2023',
-      description: 'Aufbau vom Jira Team von 3 auf 7 MAs. Fachliche & methodische Führung von diesem Team'
+      description: 'Built the Jira team from 3 to 7 members. Technical and methodological leadership of this team.'
     },
     {
       function: 'BizDevOps Engineer',
@@ -35,24 +35,25 @@ export class CvComponent {
       company: 'SBB AG',
       startDate: 'Aug 2020',
       endDate: 'Aug 2022',
-      description: 'Responsible for the whole DevOps LifeCycle in Digital Services for DevTools.'
+      description: 'Responsible for the entire DevOps Lifecycle in Digital Services for DevTools.'
     }
   ];
+
   educationList = [
     {
-      degree: 'Bachelor of Science in Digital Business & Ai / Wirtschaftsinformatik',
+      degree: 'Bachelor of Science in Digital Business & AI / Business Informatics',
       school: 'Berner Fachhochschule',
       startDate: 'Sep 2022',
       endDate: 'Aug 2026'
     },
     {
-      degree: 'Informatiker Applikations Entwicklung EFZ',
+      degree: 'Computer Scientist Application Development EFZ',
       school: 'gibb',
       startDate: 'Aug 2016',
       endDate: 'Jul 2020'
     },
     {
-      degree: 'Technische Berufsmaturität',
+      degree: 'Technical Professional Maturity',
       school: 'gibb',
       startDate: 'Aug 2016',
       endDate: 'Jul 2020'

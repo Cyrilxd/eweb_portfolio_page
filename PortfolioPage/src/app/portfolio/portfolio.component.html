@@ -28,10 +28,10 @@
       </app-template-card>
     </section>
 
-    <section id="catPicture">
+    <section id="dogPicture">
       <app-template-card [title]="'dog Pictures'">
         <div *ngIf="imageUrlDog; else loading">
-            <h2>Random Cat Picture</h2>
+            <h2>Random Dog Picture</h2>
             <img [src]="imageUrlDog" alt="Dog Picture" />
           </div>
         <ng-template #loading>
