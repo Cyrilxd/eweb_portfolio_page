@@ -8,7 +8,7 @@ import {catchError} from "rxjs/operators";
 })
 export class CatpicService {
 
-  private readonly apiUrl: string = 'https://cataas.com/cat'; // will be proxied to: 'https://http.cat' -> chatgpt is cooking lol
+  private readonly apiUrl: string = 'https://cataas.com/cat';
 
   getRandomCatImage(): string{
    return this.apiUrl

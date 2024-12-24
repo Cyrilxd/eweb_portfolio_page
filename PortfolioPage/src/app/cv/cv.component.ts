@@ -11,7 +11,6 @@ import {CommonModule} from "@angular/common";
 export class CvComponent {
   name: string = "Cyril Heiniger";
   email: string = "cyril.heiniger@bluewin.ch";
-  phone: string = "not public";
 
   jobs = [
     {

@@ -7,7 +7,7 @@ import { catchError } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class HttpcodeapiService {
-  private readonly apiUrl = '/api/'; // will be proxied to: 'https://http.cat' -> chatgpt is cooking lol
+  private readonly apiUrl = '/api/'; // will be proxied to: 'https://http.cat'
   private readonly filePath = 'assets/HTTP_Status_Codes.txt'; // Pfad zur Datei
 
   private cachedStatusCodes: number[] | null = null; // Cache für Statuscodes

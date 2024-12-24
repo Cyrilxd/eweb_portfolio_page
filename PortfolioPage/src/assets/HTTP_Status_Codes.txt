@@ -63,5 +63,12 @@
 506 Variant Also Negotiates
 507 Insufficient Storage (WebDAV)
 508 Loop Detected (WebDAV)
+509 Bandwidth Limit Exceeded
 510 Not Extended
 511 Network Authentication Required
+522 Connection Timed Out
+523 Origin Is Unreachable
+525 SSL Handshake Failed
+530 Site Frozen
+599 Network Connect Timeout Error
+
