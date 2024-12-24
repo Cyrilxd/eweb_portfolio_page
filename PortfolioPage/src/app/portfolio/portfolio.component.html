@@ -29,10 +29,10 @@
     </section>
 
     <section id="catPicture">
-      <app-template-card [title]="'Cat Pictures'">
-        <div *ngIf="imageUrlCatPic; else loading">
+      <app-template-card [title]="'dog Pictures'">
+        <div *ngIf="imageUrlDog; else loading">
             <h2>Random Cat Picture</h2>
-            <img [src]="imageUrlCatPic" alt="Cat Picture" />
+            <img [src]="imageUrlDog" alt="Dog Picture" />
           </div>
         <ng-template #loading>
           <p>Loading a random cat picture...</p>
